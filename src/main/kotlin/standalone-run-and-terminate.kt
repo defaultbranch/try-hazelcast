@@ -5,8 +5,8 @@ fun main() {
 
     val cfg = Config()
     val instance = Hazelcast.newHazelcastInstance(cfg)
-    val customers = instance.getMap<Int, String>("customers")
 
+    val customers = instance.getMap<Int, String>("customers")
     customers.apply {
         put(1, "Joe")
         put(2, "Ali")
